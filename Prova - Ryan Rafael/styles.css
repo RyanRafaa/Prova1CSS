@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding:40px ;
+    font-family: 'Open Sans';
+}
+/*CABEÇALHO*/
+header{
+    background-color: orangered;
+    width: 1240px;
+    height: 118px;
+    border: solid black 4px;
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-left: 30px;
+    gap: 20px;
+}
+h4{
+    width: 850px;
+}
+.a-cima{
+    padding: 15px;
+    color: black;
+}
+.cabeca{
+    display: flex;
+    flex-direction: row;  
+}
+
+/*CORPO*/
+main{
+    
+    width: 1240px;
+    height: 1500px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+
+}
+aside{
+    background-color: blue;
+    border: solid black 4px;
+    border-radius: 15px;
+    width: 292px;
+    height: 887px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 80px;
+    gap: 25px;
+    flex-direction: column;
+}
+.a-meio{
+    background-color: crimson;
+    border: solid black 4px;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+article{
+    width: 1000px;
+    height: 1500px;
+    gap: 12px;
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+section{
+    border: solid black 4px;
+    border-radius: 15px;
+    flex-direction: row;
+    background-color: crimson;
+    width: 924px;
+    height: 358px;
+    margin-top: 0;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+.corpo{
+    background-color: white;
+    border: solid black 4px;
+    border-radius: 50%;
+    width: 248px;
+    height: 248px;
+}
+.nome-tel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+p{
+    font-size: large;
+    color: white;
+}
+/*PARA CELULAR*/
+@media only screen and (max-width: 600px){
+               
+    body{
+        gap: 12px;
+        position: relative;
+        padding: 10px;
+        margin-left: 100%;
+            
+    }
+    header{
+        width: 338px;
+        height: 79px;
+        flex-direction: row;
+        gap: 10px;
+        padding: 8px;
+    }
+    .cabeca{
+        gap: 0px;
+    }
+    h4{
+        width: 60%;
+        font-size: smaller;
+    }
+    .a-cima{
+        font-size: smaller;
+        padding: 5px;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    aside{
+        width: 338px;
+        height: 79px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 2px;
+    }
+    .a-meio{
+        width: 111px;
+        height: 34px;
+    }
+    section{
+        width: 387px;
+        height: 358px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .corpo{
+        width: 150px;
+        height: 150px;
+    }
+    .nome-tel{
+        justify-content: center;
+        align-items: center;
+    }
+}
